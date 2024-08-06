@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune City Assignment</title>
+    <link href="punelogo.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2e8b57;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 5px solid orange;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header marquee {
+            font-size: 2.5em;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding: 0;
+            margin-bottom: 40px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #2e8b57;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+            position: relative;
+        }
+
+        ul li a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: -3px;
+            left: 0;
+            background-color: #2e8b57;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        ul li a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        ul li a:hover {
+            color: #006400;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #2e8b57;
+            margin-top: 30px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 40px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        ol li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        ol li a {
+            text-decoration: none;
+            color: #2e8b57;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+            position: relative;
+        }
+
+        ol li a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: -3px;
+            left: 0;
+            background-color: #2e8b57;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        ol li a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        ol li a:hover {
+            color: #006400;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #2e8b57;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><marquee>Welcome to Pune City !!!!!</marquee></h1>
+    </header>
+    <hr>
+    <p>Select the link to get more information about Pune:</p>
+    <ul>
+        <li><a href="/punecolleges.html">Pune Colleges</a></li>
+        <li><a href="/punehistoricalplaces.html">Pune Historical Places</a></li>
+        <li><a href="/punetrekkingspots.html">Pune Trekking Spots</a></li>
+        <li><a href="/puneacceptdetails.html">Pune Accept Details</a></li>
+    </ul>
+    <h2>Modes of Transport in Pune</h2>
+    <ol type="A">
+        <li><a href="https://www.aai.aero/en/airports/pune">Airways</a></li>
+        <li><a href="https://indiarailinfo.com/station/map/pune-junction-pune/76">Railways</a></li>
+        <li><a href="https://pmpml.org/">Buses</a></li>
+        <li><a href="https://www.punemetrorail.org/">Metro</a></li>
+    </ol>
+</body>
+</html>
