@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Accept Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: #ffffff; /* White container background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        h1 {
+            color: #28a745; /* Green heading */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-color: #ced4da; /* Light gray border */
+        }
+
+        /* ID Selector */
+        #preferences {
+            resize: vertical;
+            min-height: 150px; /* Minimum height for textarea */
+        }
+
+        /* Tag Selector */
+        input[type="date"],
+        input[type="number"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Button styling */
+        .btn-primary {
+            background-color: #28a745; /* Green button */
+            border-color: #28a745;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838; /* Darker green on hover */
+            border-color: #1e7e34;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: #007bff; /* Blue navigation bar */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* White brand text */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; /* White navigation links */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #e9ecef; /* Light gray on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pune Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="punecity.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="punecolleges.html">Colleges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="punehistoricalplaces.html">Historical Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="punetrekkingspots.html">Trekking Spots</a>
+                    </li>
+                    <!-- Dropdown List -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">About Pune</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center mb-4">
+            Welcome to Pune Accept Details!
+        </h1>
+        <form action="process_form.php" method="post" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+                <div class="invalid-feedback">
+                    Please enter your name.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="travelDates" class="form-label">Travel Dates:</label>
+                <input type="date" class="form-control" id="travelDates" name="travelDates" required>
+                <div class="invalid-feedback">
+                    Please select your travel dates.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="numTravelers" class="form-label">Number of Travelers:</label>
+                <input type="number" class="form-control" id="numTravelers" name="numTravelers" min="1" required>
+                <div class="invalid-feedback">
+                    Please enter the number of travelers.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="budget" class="form-label">Budget (in INR):</label>
+                <input type="number" class="form-control" id="budget" name="budget" min="0" required>
+                <div class="invalid-feedback">
+                    Please enter your budget.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="preferences" class="form-label">Travel Preferences:</label>
+                <textarea class="form-control" id="preferences" name="preferences" rows="5" required></textarea>
+                <div class="invalid-feedback">
+                    Please describe your travel preferences.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Gender:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                    <label class="form-check-label" for="male">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label" for="female">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Interests:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cultural" name="interests" value="cultural">
+                    <label class="form-check-label" for="cultural">
+                        Cultural Sites
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="nature" name="interests" value="nature">
+                    <label class="form-check-label" for="nature">
+                        Nature Trails
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="adventure" name="interests" value="adventure">
+                    <label class="form-check-label" for="adventure">
+                        Adventure Sports
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="category" class="form-label">Travel Category:</label>
+                <select class="form-select" id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="leisure">Leisure</option>
+                    <option value="business">Business</option>
+                    <option value="study">Study</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a travel category.
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Generate Itinerary</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        // Example JavaScript for form validation (needs-validation class is used)
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
