@@ -1,0 +1,94 @@
+.resume-builder {
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff6347; /* Orange headings */
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #b80c0c; /* White labels */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #fff; /* White input background */
+  color: #333; /* Dark gray input text */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+}
+
+.resume-preview {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.personal-info {
+  margin-bottom: 20px;
+}
+
+.personal-info h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.education-item,
+.skill-item,
+.experience-item,
+.achievement-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.education-item label,
+.skill-item label,
+.experience-item label,
+.achievement-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.education-item input,
+.skill-item input,
+.experience-item input,
+.achievement-item input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
