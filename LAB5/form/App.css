@@ -1,0 +1,80 @@
+/* App.css */
+
+body {
+  background-color: #000080; /* Dark blue background */
+  color: white; /* White text for body */
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.form-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #e0ffff; /* Light blue container */
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003147; /* Yellow heading */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: darkblue; /* Yellow labels */
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* White input background */
+  color: #333; /* Dark gray input text */
+}
+
+.form-control:focus {
+  border-color: #eb2300; /* Orange focus color */
+  outline: none;
+  box-shadow: 0 0 5px rgba(99, 19, 5, 0.815); /* Orange shadow */
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #07a50c; /* Green button */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #012e04; /* Darker green on hover */
+  transform: translateY(-2px);
+}
+
+.success {
+  color: #4CAF50; /* Green for success */
+  margin-bottom: 15px;
+}
+
+.error {
+  color: #ec492d; /* Orange for error */
+  margin-bottom: 5px;
+}
